@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Reorg</title>
+    </head>
+    <body>
+        <form action="/search" method="POST" class="questions">
+          <div>
+            <h2>Search by first OR last name or any other type of parameter</h2>
+            <input type="text" name="search"></input>
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+        <form action="/full_name_search" method="POST" class="questions">
+          <div>
+            <h2>Search by first AND last name</h2>
+            <input type="text" name="full_name_search"></input>
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+        <div>
+          <h2>Payment data</h2>
+          <div class="information">{{data}}</div>
+        </div>
+        <form action="/results" method="POST" class="questions"></form>
+          <div>
+            <h2>Search results</h2>
+            <div class="information" type="text">{{results}}</div>
+          </div>
+          <div>
+            <a href="{{ url_for('static', filename='results/results.xls') }}" download>
+              Export to excel
+            </a>
+          </div>
+        </form>
+        </body>  
+    </body>
+</html>
