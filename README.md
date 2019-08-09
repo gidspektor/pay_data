@@ -2,7 +2,7 @@
 
 # To run with pipenv do the below
 
-### Python installation and setup
+### PyEnv installation and setup
 
 This project uses Python version **3.7.2**.
 
@@ -26,7 +26,7 @@ Use the following command to run a development instance of the service:
 $ pipenv run python run.py
 ```
 
-Go to localhost:5000
+Go to localhost:5000/2015_open_payment
 
 # To run without pipenv
 
@@ -39,7 +39,7 @@ xlwt *
 ```
 $ python run.py
 ```
-Go to localhost:5000
+Go to localhost:5000/2015_open_payment
 
 ### Running tests
 
