@@ -31,10 +31,18 @@ Go to localhost:5000/2015_open_payment
 # To run without pipenv
 
 Install the following dependencies:
+```
 flask 1.1.1
+```
+```
 pytest 4.3.1
+```
+```
 pandas *
+```
+```
 xlwt *
+```
 
 ```
 $ python run.py
