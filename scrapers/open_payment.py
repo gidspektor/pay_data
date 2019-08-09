@@ -1,5 +1,4 @@
 
-
 def search(search_input, data):
   '''
   This takes in a search input string and some data
